@@ -21,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SimpleViewLefRightActivity" />
+        <activity android:name=".ImageFilterFaceActivity" />
+        <activity android:name=".ImageFilterSaturationActivity" />
     </application>
 
 </manifest>

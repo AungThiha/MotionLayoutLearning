@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/motionLayout"
@@ -8,11 +8,29 @@
     app:layoutDescription="@xml/scene_02"
     tools:showPaths="true">
 
-    <View
-        android:id="@+id/button"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:background="@color/design_default_color_primary"
-        android:text="Button" />
+    <Button
+        android:id="@+id/simpleViewLeftRightButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="simpleViewLeftRightButton"
+        app:layout_constraintBottom_toTopOf="@id/imageFilterFaceButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
-</androidx.constraintlayout.motion.widget.MotionLayout>
+    <Button
+        android:id="@+id/imageFilterFaceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="imageFilterFaceButton"
+        app:layout_constraintBottom_toTopOf="@id/imageFilterSaturationButton"
+        app:layout_constraintTop_toBottomOf="@id/simpleViewLeftRightButton" />
+
+    <Button
+        android:id="@+id/imageFilterSaturationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="imageFilterSaturationButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageFilterFaceButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
