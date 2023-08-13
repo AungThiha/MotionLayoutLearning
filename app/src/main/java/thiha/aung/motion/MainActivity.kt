@@ -28,5 +28,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.positionKeyFrameButton).setOnClickListener {
             startActivity(PositionKeyframeActivity.createIntent(this))
         }
+
+        // attribute keyframe
+        findViewById<Button>(R.id.attributeKeyFrameButton).setOnClickListener {
+            startActivity(AttributeKeyframeActivity.createIntent(this))
+        }
     }
 }

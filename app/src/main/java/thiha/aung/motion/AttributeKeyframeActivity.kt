@@ -5,16 +5,16 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-class PositionKeyframeActivity : AppCompatActivity() {
+class AttributeKeyframeActivity : AppCompatActivity() {
 
     companion object {
         fun createIntent(context: Context): Intent {
-            return Intent(context, PositionKeyframeActivity::class.java)
+            return Intent(context, AttributeKeyframeActivity::class.java)
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_position_keyframe)
+        setContentView(R.layout.activity_attribute_keyframe)
     }
 }

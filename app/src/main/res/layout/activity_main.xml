@@ -38,7 +38,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="positionKeyFrameButton"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/attributeKeyFrameButton"
         app:layout_constraintTop_toBottomOf="@id/imageFilterSaturationButton" />
+
+    <Button
+        android:id="@+id/attributeKeyFrameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="attributeKeyFrameButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/positionKeyFrameButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
