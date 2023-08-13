@@ -46,7 +46,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="attributeKeyFrameButton"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/airplaneButton"
         app:layout_constraintTop_toBottomOf="@id/positionKeyFrameButton" />
+
+    <Button
+        android:id="@+id/airplaneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="airplaneButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/attributeKeyFrameButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

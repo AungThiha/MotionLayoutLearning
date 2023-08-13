@@ -26,6 +26,7 @@
         <activity android:name=".ImageFilterSaturationActivity" />
         <activity android:name=".PositionKeyframeActivity" />
         <activity android:name=".AttributeKeyframeActivity" />
+        <activity android:name=".AirplaneActivity" />
     </application>
 
 </manifest>
