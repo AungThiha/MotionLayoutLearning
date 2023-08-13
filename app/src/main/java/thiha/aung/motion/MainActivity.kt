@@ -24,5 +24,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(ImageFilterSaturationActivity.createIntent(this))
         }
 
+        // position keyframe
+        findViewById<Button>(R.id.positionKeyFrameButton).setOnClickListener {
+            startActivity(PositionKeyframeActivity.createIntent(this))
+        }
     }
 }

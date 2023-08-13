@@ -24,6 +24,7 @@
         <activity android:name=".SimpleViewLefRightActivity" />
         <activity android:name=".ImageFilterFaceActivity" />
         <activity android:name=".ImageFilterSaturationActivity" />
+        <activity android:name=".PositionKeyframeActivity" />
     </application>
 
 </manifest>

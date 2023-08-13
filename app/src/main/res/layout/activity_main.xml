@@ -30,7 +30,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="imageFilterSaturationButton"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/positionKeyFrameButton"
         app:layout_constraintTop_toBottomOf="@id/imageFilterFaceButton" />
+
+    <Button
+        android:id="@+id/positionKeyFrameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="positionKeyFrameButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageFilterSaturationButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
