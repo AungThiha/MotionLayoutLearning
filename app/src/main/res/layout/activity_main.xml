@@ -1,60 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/scene_02"
-    tools:showPaths="true">
+    android:gravity="center_vertical"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/simpleViewLeftRightButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="simpleViewLeftRightButton"
-        app:layout_constraintBottom_toTopOf="@id/imageFilterFaceButton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        android:text="simpleViewLeftRightButton" />
 
     <Button
         android:id="@+id/imageFilterFaceButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="imageFilterFaceButton"
-        app:layout_constraintBottom_toTopOf="@id/imageFilterSaturationButton"
-        app:layout_constraintTop_toBottomOf="@id/simpleViewLeftRightButton" />
+        android:text="imageFilterFaceButton" />
 
     <Button
         android:id="@+id/imageFilterSaturationButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="imageFilterSaturationButton"
-        app:layout_constraintBottom_toTopOf="@id/positionKeyFrameButton"
-        app:layout_constraintTop_toBottomOf="@id/imageFilterFaceButton" />
+        android:text="imageFilterSaturationButton" />
 
     <Button
         android:id="@+id/positionKeyFrameButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="positionKeyFrameButton"
-        app:layout_constraintBottom_toTopOf="@id/attributeKeyFrameButton"
-        app:layout_constraintTop_toBottomOf="@id/imageFilterSaturationButton" />
+        android:text="positionKeyFrameButton" />
 
     <Button
         android:id="@+id/attributeKeyFrameButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="attributeKeyFrameButton"
-        app:layout_constraintBottom_toTopOf="@id/airplaneButton"
-        app:layout_constraintTop_toBottomOf="@id/positionKeyFrameButton" />
+        android:text="attributeKeyFrameButton" />
 
     <Button
         android:id="@+id/airplaneButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="airplaneButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/attributeKeyFrameButton" />
+        android:text="airplaneButton" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/rotatingTextCoordinatorLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rotatingTextCoordinatorLayoutButton" />
+
+</LinearLayout>

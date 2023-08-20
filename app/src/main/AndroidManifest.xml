@@ -27,6 +27,7 @@
         <activity android:name=".PositionKeyframeActivity" />
         <activity android:name=".AttributeKeyframeActivity" />
         <activity android:name=".AirplaneActivity" />
+        <activity android:name=".RotatingTextCoordinatorLayoutActivity" />
     </application>
 
 </manifest>

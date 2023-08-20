@@ -38,5 +38,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.airplaneButton).setOnClickListener {
             startActivity(AirplaneActivity.createIntent(this))
         }
+
+        findViewById<Button>(R.id.rotatingTextCoordinatorLayoutButton).setOnClickListener {
+            startActivity(RotatingTextCoordinatorLayoutActivity.createIntent(this))
+        }
     }
 }
