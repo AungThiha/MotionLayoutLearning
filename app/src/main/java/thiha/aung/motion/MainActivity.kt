@@ -42,5 +42,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.rotatingTextCoordinatorLayoutButton).setOnClickListener {
             startActivity(RotatingTextCoordinatorLayoutActivity.createIntent(this))
         }
+
+        findViewById<Button>(R.id.drawerButton).setOnClickListener {
+            startActivity(DrawerActivity.createIntent(this))
+        }
     }
 }

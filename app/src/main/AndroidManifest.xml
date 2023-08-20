@@ -28,6 +28,7 @@
         <activity android:name=".AttributeKeyframeActivity" />
         <activity android:name=".AirplaneActivity" />
         <activity android:name=".RotatingTextCoordinatorLayoutActivity" />
+        <activity android:name=".DrawerActivity" />
     </application>
 
 </manifest>
